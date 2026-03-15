@@ -1,0 +1,101 @@
+    fieldset{
+        outline: none;
+        padding: .7rem;
+        border: 1px solid rgb(27, 27, 27);
+        border-radius: 10px;
+          
+            & input{
+                border: none;
+                outline: none;
+                background: none;
+                color: white    ;
+            }
+    }
+
+    .form-stats{
+        display: flex;
+        gap: 10px;
+
+            & fieldset{
+                & input{
+                    width: 100px;
+                }
+            }
+    }
+
+    .form-gender{
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+            & button{
+                background: none;
+                outline: none;
+                border: 1px solid rgb(24, 24, 24);
+                border-radius: 10px;
+                padding: 1rem;
+                cursor: pointer;
+            }
+    }
+
+    .form-user-id{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    
+    }
+
+    #tme-connect{
+        width: 30%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center; 
+        background: blue;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all .2s ease;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+
+    .form-generate-btn{
+        background: white;
+        border: none;
+        color: black;
+        border-radius: 10px;
+        width: 130px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        translate: all .2s ease;
+        margin: auto;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Geist";
+        transition: all .2s ease;
+
+            &:hover{
+                width: 200px;
+                box-shadow: 0px 5px 10px green;
+            }
+    }
+
+    /*Modifications*/
+
+    .active_gender{
+        box-shadow: 0px 0px 5px whitesmoke;
+    }
+
+    .disabled{
+        opacity: 0.1 !important;
+    }
