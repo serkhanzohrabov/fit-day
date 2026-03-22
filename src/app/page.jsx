@@ -18,9 +18,12 @@ export default function Home() {
   ];
 
   useEffect( () => {
-    const tg  = window.Telegram.WebApp;
-    const userData = tg.initDataUnsafe.user;
+    const tg = window.Telegram && window.Telegram.WebApp
+    if (!tg) return;
 
+    const userData = tg.initDataUnsafe && tg.initDataUnsafe.user
+    
+    tg.ready()
     tg.expand();
 
     if(userData){
